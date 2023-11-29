@@ -30,7 +30,13 @@ int main(int argc, char const *argv[])
     }
     printf("Suma de las matrices\n");
     int suma[a][b];
-    
+    for(int i = 0; i < a; i++) {
+        for(int j = 0; j < b; j++) {
+            suma[i][j] = matriz[i][j] + matriz2[i][j];
+            printf("%d\t", suma[i][j]);
+        }
+        printf("\n");
+    }
     
 
     return 0;
