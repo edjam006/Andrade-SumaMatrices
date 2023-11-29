@@ -29,10 +29,10 @@ int main(int argc, char const *argv[])
         printf("\n"); 
     }
     printf("Suma de las matrices\n");
-    int suma[a][b];
+    int suma[a][b]; //Se declara la nueva matriz de suma, las dimensiones estan definidas por las letras a y b que fueron asignadas como filas y columnas
     for(int i = 0; i < a; i++) {
-        for(int j = 0; j < b; j++) {
-            suma[i][j] = matriz[i][j] + matriz2[i][j];
+        for(int j = 0; j < b; j++) { 
+            suma[i][j] = matriz[i][j] + matriz2[i][j]; //Se navega por cada matriz con los for respectivos, y para cada elemento con las variables de matriz y matriz2 se le va asignando a cada posicion de la matriz a la nueva matriz suma 
             printf("%d\t", suma[i][j]);
         }
         printf("\n");
